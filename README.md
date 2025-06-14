@@ -92,7 +92,7 @@ Xiaoxu Yang, Jiarui Li, Adam Yongxin Ye, Xianing Zheng, Sheng Wang, Martin W Bre
 
 ## 7. Contact:
 
-:email: Xiaoxu Yang: [xiaoxu.yang@genetics.utah.edu](mailto:xiaoxu.yang@genetics.utah.edu), [xiaoxuyanglab@gmail.com](mailto:xiaoxuyanglab@gmail.com)
+:email: Xiaoxu Yang: [xiaoxu.yang@genetics.utah.edu](mailto:xiaoxu.yang@genetics.utah.edu), the Yang Lab [xiaoxuyanglab@gmail.com](mailto:xiaoxuyanglab@gmail.com)
 
 -----------------------------------
 
