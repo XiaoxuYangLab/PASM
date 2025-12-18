@@ -43,6 +43,14 @@ If you want to calculate the CIs with PASM Bayesian model, you can use [this Per
 
 For the Perl version: `samtools mpileup -r ${chr}:${pos}-${pos} -f <reference_file> -Q 0 -q 0 -AB -d 5000000 <input_bam> | ./get_ref_alt_baseQ_corrected_calculate_only_2016_12_03.pl`
 
+Expected output format
+
+`Chr Pos Ref Alt1 Count_IN Count_DEL Count_A Count_C Count_G Count_T Count_a Count_c Count_g Count_T MLE CI_lower CI_upper p_fisher`
+
+To combine positive strand and negative strand and filter it to generate the ref alt count with indels, an example is 
+
+`cat input.txt|awk -v OFS='\t' '{print NAME,$0}'| awk -v OFS='\t' '{print $1,$2,$3,$4,$5,$6,$7,$8+$12,$9+$13,$10+$14,$11+$15,$16}'|awk -v OFS="\t" 'function max(a, b, c, d, e) { return (a > b ? (a > c ? (a > d ? (a > e ? a : e) : (d > e ? d : e)) : (c > d ? (c > e ? c : e) : (d > e ? d : e))) : (b > c ? (b > d ? (b > e ? b : e) : (d > e ? d : e)) : (c > d ? (c > e ? c : e) : (d > e ? d : e)))); }{if ($5=="A") print $0, $9, max($7, $8, $10, $11, $12);else if ($5=="C") print $0, $10, max($7, $8, $9, $11, $12);else if ($5=="G") print $0, $11, max($7, $8, $9, $10, $12);else if ($5=="T") print $0, $12, max($7, $8, $9, $10, $11);}'>>Reformatted_with_WT_alt.txt`
+
 --------------
 
 ## 4. Experimental design:
