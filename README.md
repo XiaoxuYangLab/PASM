@@ -69,6 +69,7 @@ Percentiles for decision boundaries could be adjusted to get different accuracy.
 
 ## 5. Related publications:
 
+* [Somatic Mosaicism Patterns Define Clinical-Surgical Subtypes of Focal Cortical Dysplasia Through Cell-Type-Specific Expression](https://www.medrxiv.org/content/10.1101/2025.10.06.25337172v1) 2025. <i>medRxiv</i>
 * [Identification of Novel Mosaic Variants in Focal Epilepsy-Associated Patients’ Brain Lesions](https://www.mdpi.com/2073-4425/16/4/421) 2025. <i>(Genes)</i>
 * [Cell-type-resolved mosaicism reveals clonal dynamics of the human forebrain](https://www.nature.com/articles/s41586-024-07292-5) 2024. <i>(Nature)</i>
 * [Control-independent mosaic single nucleotide variant detection with DeepMosaic.](https://www.nature.com/articles/s41587-022-01559-w) 2023. <i>(Nature Biotechnology)</i>
