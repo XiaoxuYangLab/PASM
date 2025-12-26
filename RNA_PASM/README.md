@@ -9,7 +9,7 @@ Modified from the DNA version, maintained by Xiaoxu Yang and Xincen Xi.
 `python new_compute_binom.py <CHR> <POS> <REF> <ALT> <BAM_PATH>`
 
 ## Output format:
-`python new_compute_binom_RNA.py <Depth> <Ref+Alt> <Aa_count> <Aa_count> <Cc_count> <Gg_count> <Tt_count> <insertion_count> <deletion_count> <insertion_alt_count> <deletion_alt_count> <num_alt/(num_ref+num_alt)> <95%binomial_CI_lower> <95binomial_CI_higher> <p-value>`
+`python new_compute_binom_RNA.py <Depth> <Ref+Alt> <Aa_count> <Aa_count> <Cc_count> <Gg_count> <Tt_count> <insertion_count> <deletion_count> <insertion_alt_count> <deletion_alt_count> <num_alt/(num_ref+num_alt)> <95%binomial_CI_lower> <95binomial_CI_higher> <p-value of Fisher strand bias>`
 
 ## Notes: 
 For skipped transcripts, depth will be the same as mpileup but Ref+Alt count will be smaller depending on how many reads skipps the position
