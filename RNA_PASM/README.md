@@ -3,7 +3,7 @@
 Modified from the DNA version, maintained by Xiaoxu Yang and Xincen Xi.
 
 ## Before starting:
-[scipy](https://www.scipy.org/), [pandas](https://pandas.pydata.org/), and [NumPy](https://numpy.org/) packages should be available for your Python.
+[scipy](https://www.scipy.org/) v1.12, [pandas](https://pandas.pydata.org/), and [NumPy](https://numpy.org/) v2.0 packages should be available for your Python.
 
 ## Usage of the tool:
 `python new_compute_binom.py <CHR> <POS> <REF> <ALT> <BAM_PATH>`
