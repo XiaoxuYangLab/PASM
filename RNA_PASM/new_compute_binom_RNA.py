@@ -48,6 +48,9 @@ def translate_bases(ref, depth, match, gt_alt):
         elif match[i] == "<":                                                                                                                
             pos_q += 1
             i += 1
+        elif match[i] in ['N', 'n']:
+            pos_q += 1
+            i += 1
         elif match[i] == '+':                                                                                                                
             I += 1                                                                                                                           
             if re.match(r"\d",match[i+2]):
@@ -177,7 +180,7 @@ def main(argv):
     query_position = str(gt_chrom) + ":" + str(gt_pos) + "-" + str(gt_pos)
 #    print(query_position)
     output, error = Popen(["samtools", "mpileup", "-r", query_position, \
-           "-f", "/scratch/ucgd/lustre-labs/yang/User/u1475541_Xincen/Data_resource/refdata-gex-GRCh38-2024-A/fasta/genome.fa",\
+           "-f", "/scratch/ucgd/lustre-labs/yang/User/u1475541_Xincen/Data_resource/gencode/GRCh38.p14.genome.fa",\
            "-Q", "0", "-q", "0", "-AB", "-d", "5000000 ", \
            bam_file],\
            stdin=PIPE, stdout=PIPE, stderr=PIPE).communicate()
