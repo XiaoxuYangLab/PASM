@@ -3,7 +3,7 @@
 Implemented by Xin Xu with input from Xiaoxu Yang and all the previous versions of scripts, maintained by Xin Xu and Xiaoxu Yang.
 
 ## Before starting:
-[NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [scipy](https://www.scipy.org/) packages should be available for your Python.
+[NumPy](https://numpy.org/) v=1.21.5, [pandas](https://pandas.pydata.org/) v=1.3.5, and [scipy](https://www.scipy.org/) v=1.7.3 packages should be available for your Python v=3.7.16.
 
 ## Usage of the tool:
 `python new_compute_binom.py <CHR> <POS> <REF> <ALT> <BAM_PATH>`
